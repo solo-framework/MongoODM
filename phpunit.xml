@@ -12,7 +12,7 @@
 >
 	<php>
 		<!--<var name="mongo.server" value="mongodb://root:toor@localhost:27017"/>-->
-		<var name="mongo.server" value="mongodb://root@localhost:27017"/>
+		<var name="mongo.server" value="mongodb://root@127.0.0.1:27017"/>
 		<var name="mongo.dbname" value="mongo_test"/>
 	</php>
 
