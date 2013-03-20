@@ -22,7 +22,7 @@ class MongoConnectionTest extends \PHPUnit_Framework_TestCase
 	public function testConnection()
 	{
 		$this->mongocon = new MongoConnection(
-			$_ENV["mongo.server"], $_ENV["mongo.dbname"], array()
+			$GLOBALS["mongo.server"], $GLOBALS["mongo.dbname"], array()
 		);
 
 		$res = $this->mongocon->getMongoDB()->lastError();

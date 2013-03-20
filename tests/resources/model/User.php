@@ -40,4 +40,17 @@ class User extends MongoEntity
 	 */
 	public $createAt = null;
 
+	/**
+	 * Список друзей
+	 *
+	 * @var array
+	 */
+	public $friends = array();
+
+	public static function getFieldsMeta()
+	{
+		return array(
+			"friends" => false
+		);
+	}
 }

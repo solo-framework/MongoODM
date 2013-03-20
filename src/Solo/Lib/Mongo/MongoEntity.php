@@ -30,7 +30,7 @@ abstract class MongoEntity
 	const TYPE_ENTITY = "TYPE_ENTITY";
 
 	/**
-	 * Возвращает метаинформацию для полей
+	 * Возвращает метаинформацию по связям полей с другими объектами модели
 	 *
 	 * @return array
 	 */

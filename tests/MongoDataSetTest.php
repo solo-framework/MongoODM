@@ -11,12 +11,25 @@ use Solo\Lib\Mongo\MongoDataSet;
 
 class MongoDataSetTest extends PHPUnit_Framework_TestCase
 {
+	private $mongoClient = null;
+
 	/** @var MongoDataSet */
-	public $dataSet = null;
+	private $dataSet = null;
+
+	public function __construct()
+	{
+		$this->mongoClient = new MongoClient($GLOBALS["mongo.server"]);
+		$this->mongoClient->selectDB($GLOBALS["mongo.dbname"])->execute(file_get_contents(__DIR__. "/resources/db.js"));
+	}
+
+	public function __destruct()
+	{
+		$this->mongoClient->selectDB($GLOBALS["mongo.dbname"])->drop();
+	}
 
 	public function setUp()
 	{
-		$cursor = new MongoCursor(new MongoClient($_ENV["mongo.server"]), $_ENV["mongo.dbname"].".user");
+		$cursor = new MongoCursor($this->mongoClient, $GLOBALS["mongo.dbname"].".user");
 		$this->dataSet = new MongoDataSet($cursor, "User");
 	}
 
@@ -60,6 +73,8 @@ class MongoDataSetTest extends PHPUnit_Framework_TestCase
 		$this->dataSet->rewind();
 		$this->assertTrue($this->dataSet->hasNext());
 		$this->assertTrue($this->dataSet->valid());
+
+		$this->assertEquals("51486d47c674d9fbd71ac4b4", $this->dataSet->key());
 	}
 
 	public function testSelection()

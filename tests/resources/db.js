@@ -1,6 +1,24 @@
-db.user.insert({ name: "Alice", age: 20, createAt: new Date() });
-db.user.insert({ name: "Bob", age: 17, createAt: new Date() });
-db.user.insert({ name: "Carl", age: 30, createAt: new Date() });
+db.user.insert({
+	_id: ObjectId("51486d47c674d9fbd71ac4b4"),
+	name: "Alice",
+	age: 20,
+	createAt: new Date(),
+	friends: [ ObjectId("51486d47c674d9fbd71ac4b5"), ObjectId("51486d47c674d9fbd71ac4b6") ]
+});
+db.user.insert({
+	_id: ObjectId("51486d47c674d9fbd71ac4b5"),
+	name: "Bob",
+	age: 17,
+	createAt: new Date(),
+	friends: [ ObjectId("51486d47c674d9fbd71ac4b4") ]
+});
+db.user.insert({
+	_id: ObjectId("51486d47c674d9fbd71ac4b6"),
+	name: "Carl",
+	age: 30,
+	createAt: new Date(),
+	friends: []
+});
 
 db.article.insert({
 	title: "My cool article",

@@ -1,32 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" name="Default" comment="" />
+    <list default="true" id="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/resources/model/ArticleManager.php" afterPath="$PROJECT_DIR$/tests/resources/model/ArticleManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/MongoConnectionTest.php" afterPath="$PROJECT_DIR$/tests/MongoConnectionTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/MongoDataSetTest.php" afterPath="$PROJECT_DIR$/tests/MongoDataSetTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/MongoDocEntitytMapperTest.php" afterPath="$PROJECT_DIR$/tests/MongoDocEntitytMapperTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Solo/Lib/Mongo/MongoEntity.php" afterPath="$PROJECT_DIR$/src/Solo/Lib/Mongo/MongoEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/MongoEntityManagerTest.php" afterPath="$PROJECT_DIR$/tests/MongoEntityManagerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/resources/model/User.php" afterPath="$PROJECT_DIR$/tests/resources/model/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/resources/model/UserManager.php" afterPath="$PROJECT_DIR$/tests/resources/model/UserManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/resources/db.js" afterPath="$PROJECT_DIR$/tests/resources/db.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/phpunit.xml" afterPath="$PROJECT_DIR$/tests/phpunit.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="mongo-odm-test.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/CustomMongoCursor.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363331232069" ignored="false" />
-    <file path="/a.dummy" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363333445484" ignored="false" />
+    <file path="/a.dummy" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363774168974" ignored="false" />
     <file path="/MongoDocEntitytMapper.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363331408423" ignored="false" />
     <file path="/MongoEntityManager.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363335541449" ignored="false" />
     <file path="/MongoSoloAdapter.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363334978914" ignored="false" />
     <file path="/MongoConnection.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363334841329" ignored="false" />
-    <file path="/Dummy.txt" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363702551518" ignored="false" />
-    <file path="/phpunit.xml" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363680991822" ignored="false" />
+    <file path="/Dummy.txt" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363779950193" ignored="false" />
+    <file path="/phpunit.xml" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363774007913" ignored="false" />
     <file path="/MongoConnectionTest.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363337937401" ignored="false" />
     <file path="/Author.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363685570364" ignored="false" />
-    <file path="/MongoDataSetTest.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363685689919" ignored="false" />
+    <file path="/MongoDataSetTest.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363779580491" ignored="false" />
     <file path="/db.json" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363678440542" ignored="false" />
-    <file path="/db.js" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363700244272" ignored="false" />
+    <file path="/db.js" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363764534365" ignored="false" />
     <file path="/dummy.txt" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363701012673" ignored="false" />
     <file path="/composer.json" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363685958450" ignored="false" />
     <file path="/IMongoEntityManager.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363679955601" ignored="false" />
     <file path="/autoload_namespaces.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363680282585" ignored="false" />
-    <file path="/MongoDocEntitytMapperTest.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363688257854" ignored="false" />
+    <file path="/MongoDocEntitytMapperTest.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363779466388" ignored="false" />
     <file path="/Address.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363685421357" ignored="false" />
     <file path="/Article.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363685539735" ignored="false" />
-    <file path="/User.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363698544195" ignored="false" />
-    <file path="/MongoEntityManagerTest.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363702360353" ignored="false" />
-    <file path="/UserManager.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363697330458" ignored="false" />
+    <file path="/User.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363764371439" ignored="false" />
+    <file path="/MongoEntityManagerTest.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363779273436" ignored="false" />
+    <file path="/UserManager.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363768762653" ignored="false" />
     <file path="/MongoDataSet.php" changelist="9ab2aff3-05e2-43c4-a4ba-9c51f52d80a8" time="1363699114136" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,34 +52,14 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <pharPath>C:\PHP\5.3.10\composer.phar</pharPath>
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/mongo-odm-test$tests.coverage" NAME="tests Coverage Results" MODIFIED="1363779904470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="MongoEntityManager.php" pinned="false" current="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/Solo/Lib/Mongo/MongoEntityManager.php">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state line="97" column="7" selection-start="2076" selection-end="2076" vertical-scroll-proportion="-2.4915032">
-                    <folding>
-                      <element signature="e#1091#1219#0" expanded="true" />
-                      <element signature="e#4657#4768#0" expanded="true" />
-                      <element signature="e#6685#6772#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -77,7 +70,7 @@
       <file leaf-file-name="MongoConnectionTest.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/MongoConnectionTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="30" selection-start="817" selection-end="817" vertical-scroll-proportion="-17.653847">
+            <state line="31" column="51" selection-start="692" selection-end="692" vertical-scroll-proportion="-13.730769">
               <folding />
             </state>
           </provider>
@@ -86,16 +79,25 @@
       <file leaf-file-name="MongoDataSetTest.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/MongoDataSetTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="53" selection-start="484" selection-end="484" vertical-scroll-proportion="3.2692308">
+            <state line="71" column="0" selection-start="1802" selection-end="1802" vertical-scroll-proportion="-42.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MongoEntityManagerTest.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="phpunit.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/phpunit.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MongoEntityManagerTest.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/MongoEntityManagerTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="46" selection-start="3123" selection-end="3123" vertical-scroll-proportion="-0.807537">
+            <state line="106" column="0" selection-start="2993" selection-end="2993" vertical-scroll-proportion="-14.769231">
               <folding>
                 <element signature="e#264#293#0" expanded="true" />
                 <element signature="e#317#349#0" expanded="true" />
@@ -104,33 +106,70 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserManager.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/resources/model/UserManager.php">
+      <file leaf-file-name="MongoDataSet.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Solo/Lib/Mongo/MongoDataSet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="1" selection-start="225" selection-end="459" vertical-scroll-proportion="-11.769231">
+            <state line="127" column="31" selection-start="2590" selection-end="2590" vertical-scroll-proportion="-39.23077">
               <folding>
-                <element signature="e#131#166#0" expanded="true" />
-                <element signature="e#256#333#0" expanded="true" />
+                <element signature="e#232#387#0" expanded="true" />
+                <element signature="e#431#486#0" expanded="true" />
+                <element signature="e#516#568#0" expanded="true" />
+                <element signature="e#601#670#0" expanded="true" />
+                <element signature="e#789#871#0" expanded="true" />
+                <element signature="e#1259#1422#0" expanded="true" />
+                <element signature="e#2113#2288#0" expanded="true" />
+                <element signature="e#2346#2538#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/resources/model/User.php">
+      <file leaf-file-name="MongoDocEntitytMapper.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Solo/Lib/Mongo/MongoDocEntitytMapper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="6" selection-start="404" selection-end="404" vertical-scroll-proportion="-14.384615">
+            <state line="65" column="5" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.7917808">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MongoDocEntitytMapperTest.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/MongoDocEntitytMapperTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="36" selection-start="2225" selection-end="2225" vertical-scroll-proportion="17.423077">
               <folding>
-                <element signature="e#317#354#0" expanded="true" />
+                <element signature="e#163#204#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Article.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/resources/model/Article.php">
+      <file leaf-file-name="IMongoEntityManager.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Solo/Lib/Mongo/IMongoEntityManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="80" selection-start="1095" selection-end="1095" vertical-scroll-proportion="-23.923077">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MongoEntityManager.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Solo/Lib/Mongo/MongoEntityManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="207" column="28" selection-start="4833" selection-end="4833" vertical-scroll-proportion="-88.26923">
+              <folding>
+                <element signature="e#1091#1219#0" expanded="true" />
+                <element signature="e#4657#4768#0" expanded="true" />
+                <element signature="e#6685#6772#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/resources/db.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="43" selection-start="33" selection-end="57" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -178,27 +217,27 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///dummy.txt" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/tests/resources/db.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/tests/resources/db.js" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/tests/resources/Address.php" />
-        <option value="$PROJECT_DIR$/tests/resources/model/Author.php" />
-        <option value="$PROJECT_DIR$/tests/resources/model/Comment.php" />
-        <option value="$PROJECT_DIR$/tests/resources/model/Phone.php" />
         <option value="$PROJECT_DIR$/tests/resources/model/Photo.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-        <option value="$PROJECT_DIR$/tests/MongoDataSetTest.php" />
         <option value="$PROJECT_DIR$/tests/resources/model/Article.php" />
-        <option value="$PROJECT_DIR$/tests/MongoDocEntitytMapperTest.php" />
-        <option value="$PROJECT_DIR$/tests/resources/model/UserManager.php" />
-        <option value="$PROJECT_DIR$/tests/resources/model/User.php" />
         <option value="$PROJECT_DIR$/src/Solo/Lib/Mongo/MongoDataSet.php" />
-        <option value="$PROJECT_DIR$/tests/resources/db.js" />
         <option value="$PROJECT_DIR$/tests/resources/model/ArticleManager.php" />
+        <option value="$PROJECT_DIR$/src/Solo/Lib/Mongo/MongoEntity.php" />
+        <option value="$PROJECT_DIR$/tests/resources/model/User.php" />
+        <option value="$PROJECT_DIR$/tests/resources/model/UserManager.php" />
+        <option value="$PROJECT_DIR$/tests/resources/db.js" />
+        <option value="$PROJECT_DIR$/tests/MongoConnectionTest.php" />
+        <option value="$PROJECT_DIR$/tests/phpunit.xml" />
         <option value="$PROJECT_DIR$/tests/MongoEntityManagerTest.php" />
+        <option value="$PROJECT_DIR$/tests/MongoDocEntitytMapperTest.php" />
+        <option value="$PROJECT_DIR$/tests/MongoDataSetTest.php" />
+        <option value="$PROJECT_DIR$/src/Solo/Lib/Mongo/MongoDocEntitytMapper.php" />
       </list>
     </option>
   </component>
@@ -253,10 +292,6 @@
               <option name="myItemId" value="mongo-odm-test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -278,73 +313,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongo-odm-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongo-odm-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongo-odm-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongo-odm-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongo-odm-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mongo-odm-test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Solo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mongo" />
+              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -357,7 +326,7 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="options.lastSelected" value="Configurable.PHP.PHPUnit" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="C:/PHP/5.3.10/PEAR/PHPUnit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/phpunit.xml" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="options.searchVisible" value="true" />
@@ -402,9 +371,32 @@
       <recent name="C:\SHARE\www\mongo-odm-test\Solo\Lib" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.MongoConnectionTest">
+  <component name="RunManager" selected="PHPUnit.tests">
     <configuration default="false" name="MongoConnectionTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="MongoConnectionTest" configuration_file="$PROJECT_DIR$/tests/phpunit.xml" file="$PROJECT_DIR$/tests/MongoConnectionTest.php" scope="Class" use_alternative_configuration_file="true" />
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/tests" />
+      <RunnerSettings RunnerId="PhpRunner" />
+      <RunnerSettings RunnerId="PhpUnitCoverageRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpUnitCoverageRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MongoDataSetTest on server" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" temporary="true" class="MongoDataSetTest" path="$PROJECT_DIR$/tests/MongoDataSetTest.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="MongoDataSetTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="MongoDataSetTest" file="$PROJECT_DIR$/tests/MongoDataSetTest.php" scope="Class" />
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner configuration_file="$PROJECT_DIR$/tests/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
       <RunnerSettings RunnerId="PhpRunner" />
       <ConfigurationWrapper RunnerId="PhpRunner" />
       <method />
@@ -419,12 +411,20 @@
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
-    <list size="1">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="PHPUnit.MongoConnectionTest" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.tests" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit on Server.MongoDataSetTest on server" />
+      <item index="3" class="java.lang.String" itemvalue="PHPUnit.MongoDataSetTest" />
+      <item index="4" class="java.lang.String" itemvalue="PHPUnit.phpunit.xml" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="PHPUnit.MongoConnectionTest" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.tests" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.MongoDataSetTest" />
+        <item index="2" class="java.lang.String" itemvalue="PHPUnit.phpunit.xml" />
+        <item index="3" class="java.lang.String" itemvalue="PHPUnit on Server.MongoDataSetTest on server" />
+        <item index="4" class="java.lang.String" itemvalue="PHPUnit.MongoConnectionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -456,26 +456,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="978" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32804877" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11282468" sideWeight="0.61341465" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22889611" sideWeight="0.6715507" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40365854" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25405845" sideWeight="0.61341465" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38658535" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32844934" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -542,48 +543,95 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/composer.json">
+    <entry file="file://$PROJECT_DIR$/tests/resources/model/ArticleManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="26" selection-start="315" selection-end="315" vertical-scroll-proportion="-9.692307">
-          <folding />
+        <state line="16" column="7" selection-start="262" selection-end="262" vertical-scroll-proportion="0.20619947">
+          <folding>
+            <element signature="e#131#166#0" expanded="true" />
+            <element signature="e#259#336#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Solo/Lib/Mongo/MongoDocEntitytMapper.php">
+    <entry file="file://$PROJECT_DIR$/src/Solo/Lib/Mongo/MongoEntity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="32" selection-start="980" selection-end="980" vertical-scroll-proportion="0.7917808">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/resources/model/Photo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="11" selection-start="157" selection-end="162" vertical-scroll-proportion="0.11096606">
-          <folding />
+        <state line="49" column="5" selection-start="689" selection-end="751" vertical-scroll-proportion="0.68640643">
+          <folding>
+            <element signature="e#426#529#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/resources/model/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="6" selection-start="404" selection-end="404" vertical-scroll-proportion="-14.384615">
+        <state line="49" column="39" selection-start="568" selection-end="568" vertical-scroll-proportion="0.77792734">
           <folding>
             <element signature="e#317#354#0" expanded="true" />
+            <element signature="e#378#428#0" expanded="true" />
+            <element signature="e#457#502#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/mongo.php">
+    <entry file="file://$PROJECT_DIR$/src/Solo/Lib/Mongo/MongoConnection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="884" column="0" selection-start="34585" selection-end="34894" vertical-scroll-proportion="0.43347052">
+        <state line="62" column="30" selection-start="928" selection-end="938" vertical-scroll-proportion="0.61776584">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/resources/model/UserManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="32" selection-start="396" selection-end="396" vertical-scroll-proportion="-10.461538">
           <folding>
-            <element signature="e#34589#34861#0" expanded="true" />
+            <element signature="e#131#166#0" expanded="true" />
+            <element signature="e#256#333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/resources/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="43" selection-start="33" selection-end="57" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/phpunit.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Solo/Lib/Mongo/IMongoEntityManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Solo/Lib/Mongo/MongoEntityManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="207" column="28" selection-start="4833" selection-end="4833" vertical-scroll-proportion="-88.26923">
+          <folding>
+            <element signature="e#1091#1219#0" expanded="true" />
+            <element signature="e#4657#4768#0" expanded="true" />
+            <element signature="e#6685#6772#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Solo/Lib/Mongo/MongoDataSet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="44" selection-start="1898" selection-end="1898" vertical-scroll-proportion="1.8328841">
+        <state line="127" column="31" selection-start="2590" selection-end="2590" vertical-scroll-proportion="-39.23077">
           <folding>
             <element signature="e#232#387#0" expanded="true" />
             <element signature="e#431#486#0" expanded="true" />
@@ -597,90 +645,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/resources/model/Address.php">
+    <entry file="file://$PROJECT_DIR$/tests/MongoConnectionTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#342#400#0" expanded="true" />
-          </folding>
+        <state line="31" column="51" selection-start="692" selection-end="692" vertical-scroll-proportion="-13.730769">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/MongoConnectionTest.php">
+    <entry file="file://$PROJECT_DIR$/tests/MongoDataSetTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="30" selection-start="817" selection-end="817" vertical-scroll-proportion="-17.653847">
+        <state line="71" column="0" selection-start="1802" selection-end="1802" vertical-scroll-proportion="-42.5">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/MongoDocEntitytMapperTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="55" selection-start="2778" selection-end="2778" vertical-scroll-proportion="0.40431267">
+        <state line="65" column="36" selection-start="2225" selection-end="2225" vertical-scroll-proportion="17.423077">
           <folding>
             <element signature="e#163#204#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/MongoDataSetTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="53" selection-start="484" selection-end="484" vertical-scroll-proportion="3.2692308">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/resources/model/UserManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="1" selection-start="225" selection-end="459" vertical-scroll-proportion="-11.769231">
-          <folding>
-            <element signature="e#131#166#0" expanded="true" />
-            <element signature="e#256#333#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/resources/model/Article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="80" selection-start="1095" selection-end="1095" vertical-scroll-proportion="-23.923077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/resources/model/ArticleManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="7" selection-start="262" selection-end="262" vertical-scroll-proportion="0.20619947">
-          <folding>
-            <element signature="e#131#166#0" expanded="true" />
-            <element signature="e#259#336#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/resources/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="22" selection-start="487" selection-end="487" vertical-scroll-proportion="0.46484375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Solo/Lib/Mongo/MongoEntityManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="7" selection-start="2076" selection-end="2076" vertical-scroll-proportion="-2.4915032">
-          <folding>
-            <element signature="e#1091#1219#0" expanded="true" />
-            <element signature="e#4657#4768#0" expanded="true" />
-            <element signature="e#6685#6772#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/MongoEntityManagerTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="46" selection-start="3123" selection-end="3123" vertical-scroll-proportion="-0.807537">
+        <state line="106" column="0" selection-start="2993" selection-end="2993" vertical-scroll-proportion="-14.769231">
           <folding>
             <element signature="e#264#293#0" expanded="true" />
             <element signature="e#317#349#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Solo/Lib/Mongo/MongoDocEntitytMapper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="5" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.7917808">
+          <folding />
         </state>
       </provider>
     </entry>

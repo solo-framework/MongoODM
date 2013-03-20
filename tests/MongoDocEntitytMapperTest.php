@@ -57,6 +57,14 @@ class MongoDocEntitytMapperTest extends PHPUnit_Framework_TestCase
              new Comment("second comment")
         ), $article->comments);
 
+		$article = $this->invokeMethod(
+			$docEntMapper,
+			"arrayToObjectRecurively",
+			array($this->getArticleData(), array("type" => "NOTHING", "class" => "Article"))
+		);
+
+		$this->assertNull($article);
+
 	}
 
 	private function getArticleData()

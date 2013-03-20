@@ -21,6 +21,6 @@ class UserManager extends MongoEntityManager
 	 */
 	public function getConnection()
 	{
-		return new MongoConnection($_ENV["mongo.server"], $_ENV["mongo.dbname"], array());
+		return new MongoConnection($GLOBALS["mongo.server"], $GLOBALS["mongo.dbname"], array());
 	}
 }
