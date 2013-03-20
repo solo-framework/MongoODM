@@ -1,7 +1,0 @@
-<phpunit bootstrap="../vendor/autoload.php" colors="true">
-	<php>
-		<!--<env name="mongo.server" value="mongodb://root:toor@localhost:27017"/>-->
-		<var name="mongo.server" value="mongodb://root:toor@192.168.11.230:27017"/>
-		<var name="mongo.dbname" value="mongo_test"/>
-	</php>
-</phpunit>
