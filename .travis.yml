@@ -9,7 +9,7 @@ services:
 
 before_script:
   - echo "extension=mongo.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-  - mongo mongo_test --eval 'db.addUser("root", "toor");'
+  - mongo mongo_test --eval 'db.addUser("travis", "test", { readOnly : false });'
 
 script: phpunit --configuration phpunit.xml --coverage-text
 
