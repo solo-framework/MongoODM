@@ -10,14 +10,14 @@
 
 namespace Solo\Lib\Mongo;
 
-interface IMongoEntityManager
+interface IEntityManager
 {
 	/**
 	 * Возвращает список сущностей по условию
 	 *
 	 * @param array|null $condition Условие выборки
 	 *
-	 * @return MongoEntity[]
+	 * @return Entity[]
 	 */
 	public function find($condition = null);
 
@@ -26,7 +26,7 @@ interface IMongoEntityManager
 	 *
 	 * @param string $objectId Mongo ID
 	 *
-	 * @return MongoEntity|null
+	 * @return Entity|null
 	 */
 	public function findById($objectId);
 
@@ -35,7 +35,7 @@ interface IMongoEntityManager
 	 *
 	 * @param array $condition Условие выборки
 	 *
-	 * @return MongoEntity|null
+	 * @return Entity|null
 	 */
 	public function findOne($condition);
 
@@ -67,9 +67,9 @@ interface IMongoEntityManager
 	/**
 	 * Сохрание сущности
 	 *
-	 * @param MongoEntity $object Сущность
+	 * @param Entity $object Сущность
 	 *
-	 * @return MongoEntity
+	 * @return Entity
 	 */
-	public function save(MongoEntity $object);
+	public function save(Entity $object);
 }

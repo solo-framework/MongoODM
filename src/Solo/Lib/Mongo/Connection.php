@@ -10,7 +10,7 @@
 
 namespace Solo\Lib\Mongo;
 
-class MongoConnection
+class Connection
 {
 	/**
 	 * Строка подключения
@@ -47,7 +47,7 @@ class MongoConnection
 	 * @param string $dbname  Имя базы
 	 * @param string $options Опции подключения
 	 *
-	 * @return MongoConnection
+	 * @return Connection
 	 */
 	public function __construct($server, $dbname, $options)
 	{

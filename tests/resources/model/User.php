@@ -8,9 +8,9 @@
  * @author  Eugene Kurbatov <ekur@i-loto.ru>
  */
 
-use Solo\Lib\Mongo\MongoEntity;
+use Solo\Lib\Mongo\Entity;
 
-class User extends MongoEntity
+class User extends Entity
 {
 	/**
 	 * Идентификатор

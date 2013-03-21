@@ -8,9 +8,9 @@
  * @author  Eugene Kurbatov <ekur@i-loto.ru>
  */
 
-use Solo\Lib\Mongo\MongoEntity;
+use Solo\Lib\Mongo\Entity;
 
-class Address extends MongoEntity
+class Address extends Entity
 {
 	/**
 	 * Назваие страны

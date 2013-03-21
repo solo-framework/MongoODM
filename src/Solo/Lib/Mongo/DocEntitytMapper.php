@@ -10,7 +10,7 @@
 
 namespace Solo\Lib\Mongo;
 
-class MongoDocEntitytMapper
+class DocEntitytMapper
 {
 	/**
 	 * Mongo документ
@@ -41,14 +41,14 @@ class MongoDocEntitytMapper
 	/**
 	 * Выполнить мапинг
 	 *
-	 * @return MongoEntity
+	 * @return Entity
 	 */
 	public function mapByFieldsMeta()
 	{
 		$id = $this->doc["_id"];
 		unset($this->doc["_id"]);
 
-		$obj = self::arrayToObjectRecurively($this->doc, array("type" => MongoEntity::TYPE_ENTITY, "class" => $this->classname));
+		$obj = self::arrayToObjectRecurively($this->doc, array("type" => Entity::TYPE_ENTITY, "class" => $this->classname));
 		$obj->id = $id;
 
 		return $obj;
@@ -64,7 +64,7 @@ class MongoDocEntitytMapper
 	 */
 	private static function arrayToObjectRecurively($data, $options)
 	{
-		if ($options["type"] == MongoEntity::TYPE_ENTITY)
+		if ($options["type"] == Entity::TYPE_ENTITY)
 		{
 			$object = new $options["class"];
 			$fieldMeta = $options["class"]::getEntityRelations();
@@ -85,14 +85,14 @@ class MongoDocEntitytMapper
 			}
 			return $object;
 		}
-		else if ($options["type"] == MongoEntity::TYPE_ARRAY_ENTITIES)
+		else if ($options["type"] == Entity::TYPE_ARRAY_ENTITIES)
 		{
 			$list = array();
 			foreach ($data as $key => $value)
 			{
 				$list[$key] = self::arrayToObjectRecurively(
 					$value,
-					array("type" => MongoEntity::TYPE_ENTITY, "class" => $options["class"])
+					array("type" => Entity::TYPE_ENTITY, "class" => $options["class"])
 				);
 			}
 			return $list;

@@ -12,12 +12,12 @@
 namespace Solo\Lib\Mongo;
 
 /**
- * @method MongoDataSet limit(int $num)
- * @method MongoDataSet sort(array $fields)
- * @method MongoDataSet skip( int $num )
+ * @method DataSet limit(int $num)
+ * @method DataSet sort(array $fields)
+ * @method DataSet skip( int $num )
  * @method int count()
  */
-class MongoDataSet implements \Iterator
+class DataSet implements \Iterator
 {
 	/**
 	 * Ссылка на курсор
@@ -47,7 +47,7 @@ class MongoDataSet implements \Iterator
 	 * @param $name
 	 * @param $arguments
 	 *
-	 * @return MongoDataSet|mixed
+	 * @return DataSet|mixed
 	 */
 	public function __call($name, $arguments)
 	{
@@ -62,7 +62,7 @@ class MongoDataSet implements \Iterator
 	 * Возвращает список всех сущностей, на
 	 * которые ссылается курсор
 	 *
-	 * @return MongoEntity[]
+	 * @return Entity[]
 	 */
 	public function getValues()
 	{
@@ -82,7 +82,7 @@ class MongoDataSet implements \Iterator
 		if (is_null($doc))
 			return null;
 
-		$mapper = new MongoDocEntitytMapper($doc, $this->className);
+		$mapper = new DocEntitytMapper($doc, $this->className);
 		return $mapper->mapByFieldsMeta();
 	}
 
@@ -100,7 +100,7 @@ class MongoDataSet implements \Iterator
 		if (is_null($doc))
 			return null;
 
-		$mapper = new MongoDocEntitytMapper($doc, $this->className);
+		$mapper = new DocEntitytMapper($doc, $this->className);
 		return $mapper->mapByFieldsMeta();
 	}
 

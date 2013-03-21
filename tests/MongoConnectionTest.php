@@ -7,7 +7,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-use Solo\Lib\Mongo\MongoConnection;
+use Solo\Lib\Mongo\Connection;
 
 class MongoConnectionTest extends \PHPUnit_Framework_TestCase
 {
@@ -21,7 +21,7 @@ class MongoConnectionTest extends \PHPUnit_Framework_TestCase
 
 	public function testConnection()
 	{
-		$this->mongocon = new MongoConnection(
+		$this->mongocon = new Connection(
 			$GLOBALS["mongo.server"], $GLOBALS["mongo.dbname"], array()
 		);
 
@@ -37,7 +37,7 @@ class MongoConnectionTest extends \PHPUnit_Framework_TestCase
 	 */
 	public function testInvalidConnection()
 	{
-		$this->mongocon = new MongoConnection(
+		$this->mongocon = new Connection(
 			"foo", "bar", array()
 		);
 	}

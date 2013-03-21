@@ -10,7 +10,7 @@
 
 namespace Solo\Lib\Mongo;
 
-abstract class MongoEntity
+abstract class Entity
 {
 	/**
 	 * Идентификатор сущности

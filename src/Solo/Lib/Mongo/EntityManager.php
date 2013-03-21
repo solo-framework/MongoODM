@@ -10,7 +10,7 @@
 
 namespace Solo\Lib\Mongo;
 
-abstract class MongoEntityManager implements IMongoEntityManager
+abstract class EntityManager implements IEntityManager
 {
 	/**
 	 * Объект коллекции
@@ -52,7 +52,7 @@ abstract class MongoEntityManager implements IMongoEntityManager
 	/**
 	 * Должен возвращать объект MongoDB
 	 *
-	 * @return MongoConnection
+	 * @return Connection
 	 */
 	abstract public function getConnection();
 
@@ -61,14 +61,14 @@ abstract class MongoEntityManager implements IMongoEntityManager
 	 *
 	 * @param array $condition Условие выборки
 	 *
-	 * @return MongoDataSet
+	 * @return DataSet
 	 */
 	public function find($condition = array())
 	{
 		$entityClass = ucfirst($this->collectionName);
 
 		$cursor = $this->collection->find($condition, $entityClass::getFieldsMeta());
-		$cursor = new MongoDataSet($cursor, $entityClass);
+		$cursor = new DataSet($cursor, $entityClass);
 		return $cursor;
 	}
 
@@ -77,7 +77,7 @@ abstract class MongoEntityManager implements IMongoEntityManager
 	 *
 	 * @param string $objectId Mongo ID
 	 *
-	 * @return MongoEntity|null
+	 * @return Entity|null
 	 */
 	public function findById($objectId)
 	{
@@ -85,7 +85,7 @@ abstract class MongoEntityManager implements IMongoEntityManager
 		$doc = $this->collection->findOne(array("_id" => new \MongoId($objectId)), $entityName::getFieldsMeta());
 		if (!$doc)
 			return null;
-		$mapper = new MongoDocEntitytMapper($doc, ucfirst($this->collectionName));
+		$mapper = new DocEntitytMapper($doc, ucfirst($this->collectionName));
 		return $mapper->mapByFieldsMeta();
 	}
 
@@ -94,7 +94,7 @@ abstract class MongoEntityManager implements IMongoEntityManager
 	 *
 	 * @param array $condition Условие выборки
 	 *
-	 * @return MongoEntity|null
+	 * @return Entity|null
 	 */
 	public function findOne($condition)
 	{
@@ -103,7 +103,7 @@ abstract class MongoEntityManager implements IMongoEntityManager
 		if (!$doc)
 			return null;
 
-		$mapper = new MongoDocEntitytMapper($doc, ucfirst($this->collectionName));
+		$mapper = new DocEntitytMapper($doc, ucfirst($this->collectionName));
 		return $mapper->mapByFieldsMeta();
 	}
 
@@ -172,7 +172,7 @@ abstract class MongoEntityManager implements IMongoEntityManager
 		$doc = $this->collection->findOne($condition, $retFields);
 		if (!$doc)
 			return null;
-		$mapper = new MongoDocEntitytMapper($doc, ucfirst($this->collectionName));
+		$mapper = new DocEntitytMapper($doc, ucfirst($this->collectionName));
 		return $mapper->mapByFieldsMeta();
 	}
 
@@ -183,7 +183,7 @@ abstract class MongoEntityManager implements IMongoEntityManager
 	 * @param array $update Параметры обновления
 	 * @param array $options Опции
 	 *
-	 * @return MongoEntity|null
+	 * @return Entity|null
 	 */
 	public function findAndModify(array $condition, array $update, array $options = array())
 	{
@@ -192,7 +192,7 @@ abstract class MongoEntityManager implements IMongoEntityManager
 		$doc = $this->collection->findAndModify($condition, $update, $entityClass::getFieldsMeta(), $options);
 		if (!$doc)
 			return null;
-		$mapper = new MongoDocEntitytMapper($doc, ucfirst($this->collectionName));
+		$mapper = new DocEntitytMapper($doc, ucfirst($this->collectionName));
 		return $mapper->mapByFieldsMeta();
 	}
 
@@ -236,11 +236,11 @@ abstract class MongoEntityManager implements IMongoEntityManager
 	/**
 	 * Сохрание сущности
 	 *
-	 * @param MongoEntity $object Сущность
+	 * @param Entity $object Сущность
 	 *
-	 * @return MongoEntity
+	 * @return Entity
 	 */
-	public function save(MongoEntity $object)
+	public function save(Entity $object)
 	{
 		$doc = (array)$object;
 

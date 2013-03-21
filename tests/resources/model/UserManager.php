@@ -8,19 +8,19 @@
  * @author  Eugene Kurbatov <ekur@i-loto.ru>
  */
 
-use Solo\Lib\Mongo\MongoConnection;
-use Solo\Lib\Mongo\MongoEntityManager;
+use Solo\Lib\Mongo\Connection;
+use Solo\Lib\Mongo\EntityManager;
 
-class UserManager extends MongoEntityManager
+class UserManager extends EntityManager
 {
 
 	/**
 	 * Должен возвращать объект MongoDB
 	 *
-	 * @return MongoConnection
+	 * @return Connection
 	 */
 	public function getConnection()
 	{
-		return new MongoConnection($GLOBALS["mongo.server"], $GLOBALS["mongo.dbname"], array());
+		return new Connection($GLOBALS["mongo.server"], $GLOBALS["mongo.dbname"], array());
 	}
 }

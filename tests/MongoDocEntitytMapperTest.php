@@ -7,14 +7,14 @@
  * To change this template use File | Settings | File Templates.
  */
 
-use Solo\Lib\Mongo\MongoDocEntitytMapper;
-use Solo\Lib\Mongo\MongoEntity;
+use Solo\Lib\Mongo\DocEntitytMapper;
+use Solo\Lib\Mongo\Entity;
 
 class MongoDocEntitytMapperTest extends PHPUnit_Framework_TestCase
 {
 	public function testMapByFieldsMeta()
 	{
-		$docEntMapper = new MongoDocEntitytMapper($this->getArticleData(), "Article");
+		$docEntMapper = new DocEntitytMapper($this->getArticleData(), "Article");
 		$article = $docEntMapper->mapByFieldsMeta();
 
 		$this->assertTrue($article->id instanceof MongoId);
@@ -23,13 +23,13 @@ class MongoDocEntitytMapperTest extends PHPUnit_Framework_TestCase
 
 	public function testArrayToObjectRecurively()
 	{
-		$docEntMapper = new MongoDocEntitytMapper($this->getArticleData(), "Article");
+		$docEntMapper = new DocEntitytMapper($this->getArticleData(), "Article");
 
 		/** @var $article Article */
 		$article = $this->invokeMethod(
 			$docEntMapper,
 			"arrayToObjectRecurively",
-			array($this->getArticleData(), array("type" => MongoEntity::TYPE_ENTITY, "class" => "Article"))
+			array($this->getArticleData(), array("type" => Entity::TYPE_ENTITY, "class" => "Article"))
 		);
 
 		$this->assertTrue($article instanceof Article);

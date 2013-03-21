@@ -7,13 +7,13 @@
  * To change this template use File | Settings | File Templates.
  */
 
-use Solo\Lib\Mongo\MongoDataSet;
+use Solo\Lib\Mongo\DataSet;
 
 class MongoDataSetTest extends PHPUnit_Framework_TestCase
 {
 	private $mongoClient = null;
 
-	/** @var MongoDataSet */
+	/** @var DataSet */
 	private $dataSet = null;
 
 	public function __construct()
@@ -30,7 +30,7 @@ class MongoDataSetTest extends PHPUnit_Framework_TestCase
 	public function setUp()
 	{
 		$cursor = new MongoCursor($this->mongoClient, $GLOBALS["mongo.dbname"].".user");
-		$this->dataSet = new MongoDataSet($cursor, "User");
+		$this->dataSet = new DataSet($cursor, "User");
 	}
 
 	public function testGetValues()

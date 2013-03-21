@@ -36,7 +36,7 @@ class MongoSoloAdapter implements IApplicationComponent
 	/**
 	 * MongoConnection
 	 *
-	 * @var MongoConnection
+	 * @var Connection
 	 */
 	private $mongocon = null;
 
@@ -49,7 +49,7 @@ class MongoSoloAdapter implements IApplicationComponent
 	 **/
 	public function initComponent()
 	{
-		$this->mongocon = new MongoConnection($this->server, $this->dbname, $this->options);
+		$this->mongocon = new Connection($this->server, $this->dbname, $this->options);
 		return true;
 	}
 

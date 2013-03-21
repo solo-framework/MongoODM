@@ -8,9 +8,9 @@
  * @author  Eugene Kurbatov <ekur@i-loto.ru>
  */
 
-use Solo\Lib\Mongo\MongoEntity;
+use Solo\Lib\Mongo\Entity;
 
-class Phone extends MongoEntity
+class Phone extends Entity
 {
 	const TYPE_HOME = "TYPE_HOME";
 

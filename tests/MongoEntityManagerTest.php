@@ -7,7 +7,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-use Solo\Lib\Mongo\MongoDataSet;
+use Solo\Lib\Mongo\DataSet;
 
 class MongoEntityManagerTest extends PHPUnit_Framework_TestCase
 {

@@ -8,9 +8,9 @@
  * @author  Eugene Kurbatov <ekur@i-loto.ru>
  */
 
-use Solo\Lib\Mongo\MongoEntity;
+use Solo\Lib\Mongo\Entity;
 
-class Photo extends MongoEntity
+class Photo extends Entity
 {
 	/**
 	 * Url фотографии
