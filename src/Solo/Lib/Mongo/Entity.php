@@ -40,6 +40,13 @@ abstract class Entity
 	}
 
 	/**
+	 * Возвращает имя коллекции, где хранятся сущности этого типа
+	 *
+	 * @return string
+	 */
+	public abstract function getCollectionName();
+
+	/**
 	 * Возвращает названия полей, исключенных по умолчанию
 	 *
 	 * @return array

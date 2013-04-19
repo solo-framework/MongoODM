@@ -42,8 +42,11 @@ abstract class EntityManager implements IEntityManager
 	{
 		if ($this->collectionName == null)
 		{
-			$managerName = get_called_class();
-			$this->collectionName = strtolower(str_replace("Manager", "", $managerName));
+			$len = 7; // lenth of "Manager"
+			$className = str_replace("\\Manager", "\\Entity", get_called_class());
+			$class = substr($className, 0, -$len);
+			$inst = new $class;
+			$this->collectionName = $inst->getCollectionName();
 		}
 
 		$this->collection = $this->getConnection()->getMongoDB()->selectCollection($this->collectionName);
