@@ -8,6 +8,8 @@
  * @author  Eugene Kurbatov <ekur@i-loto.ru>
  */
 
+namespace App\Entity;
+
 use Solo\Lib\Mongo\Entity;
 
 class Phone extends Entity
@@ -34,5 +36,15 @@ class Phone extends Entity
 	{
 		$this->type = $type;
 		$this->value = $value;
+	}
+
+	/**
+	 * Возвращает имя коллекции, где хранятся сущности этого типа
+	 *
+	 * @return string
+	 */
+	public function getCollectionName()
+	{
+		return null;
 	}
 }

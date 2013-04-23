@@ -7,6 +7,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
+use App\Entity\User;
 use Solo\Lib\Mongo\DataSet;
 
 class MongoDataSetTest extends PHPUnit_Framework_TestCase
@@ -30,7 +31,7 @@ class MongoDataSetTest extends PHPUnit_Framework_TestCase
 	public function setUp()
 	{
 		$cursor = new MongoCursor($this->mongoClient, $GLOBALS["mongo.dbname"].".user");
-		$this->dataSet = new DataSet($cursor, "User");
+		$this->dataSet = new DataSet($cursor, "App\\Entity\\User");
 	}
 
 	public function testGetValues()

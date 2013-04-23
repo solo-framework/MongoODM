@@ -8,6 +8,8 @@
  * @author  Eugene Kurbatov <ekur@i-loto.ru>
  */
 
+namespace App\Entity;
+
 use Solo\Lib\Mongo\Entity;
 
 class Author extends Entity
@@ -36,7 +38,17 @@ class Author extends Entity
 	public static function getEntityRelations()
 	{
 		return array(
-			"address" => array("type" => self::TYPE_ENTITY, "class" => "Address")
+			"address" => array("type" => self::TYPE_ENTITY, "class" => __NAMESPACE__ . "\\Address")
 		);
+	}
+
+	/**
+	 * Возвращает имя коллекции, где хранятся сущности этого типа
+	 *
+	 * @return string
+	 */
+	public function getCollectionName()
+	{
+		return null;
 	}
 }

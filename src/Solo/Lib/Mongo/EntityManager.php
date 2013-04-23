@@ -35,6 +35,8 @@ abstract class EntityManager implements IEntityManager
 	 */
 	protected $defaultWriteOptions = array("w" => 1);
 
+	protected $entityClassName = null;
+
 	/**
 	 * Конструтор
 	 */
@@ -43,13 +45,18 @@ abstract class EntityManager implements IEntityManager
 		if ($this->collectionName == null)
 		{
 			$len = 7; // lenth of "Manager"
-			$className = str_replace("\\Manager", "\\Entity", get_called_class());
-			$class = substr($className, 0, -$len);
-			$inst = new $class;
+			$className = str_replace("Manager\\", "Entity\\", get_called_class());
+			$this->entityClassName = substr($className, 0, -$len);
+
+			/** @var $inst Entity */
+			$inst = new $this->entityClassName;
 			$this->collectionName = $inst->getCollectionName();
 		}
 
-		$this->collection = $this->getConnection()->getMongoDB()->selectCollection($this->collectionName);
+		if ($this->collectionName)
+		{
+			$this->collection = $this->getConnection()->getMongoDB()->selectCollection($this->collectionName);
+		}
 	}
 
 	/**
@@ -68,11 +75,11 @@ abstract class EntityManager implements IEntityManager
 	 */
 	public function find($condition = array())
 	{
-		$entityClass = ucfirst($this->collectionName);
-
-		$cursor = $this->collection->find($condition, $entityClass::getFieldsMeta());
-		$cursor = new DataSet($cursor, $entityClass);
-		return $cursor;
+		$cursor = $this->collection->find(
+			$condition,
+			call_user_func(array($this->entityClassName, "getFieldsMeta"))
+		);
+		return new DataSet($cursor, $this->entityClassName);
 	}
 
 	/**
@@ -84,11 +91,13 @@ abstract class EntityManager implements IEntityManager
 	 */
 	public function findById($objectId)
 	{
-		$entityName = ucfirst($this->collectionName);
-		$doc = $this->collection->findOne(array("_id" => new \MongoId($objectId)), $entityName::getFieldsMeta());
+		$doc = $this->collection->findOne(
+			array("_id" => new \MongoId($objectId)),
+			call_user_func(array($this->entityClassName, "getFieldsMeta"))
+		);
 		if (!$doc)
 			return null;
-		$mapper = new DocEntitytMapper($doc, ucfirst($this->collectionName));
+		$mapper = new DocEntitytMapper($doc, $this->entityClassName);
 		return $mapper->mapByFieldsMeta();
 	}
 
@@ -101,12 +110,13 @@ abstract class EntityManager implements IEntityManager
 	 */
 	public function findOne($condition)
 	{
-		$entityName = ucfirst($this->collectionName);
-		$doc = $this->collection->findOne($condition, $entityName::getFieldsMeta());
+		$doc = $this->collection->findOne(
+			$condition, call_user_func(array($this->entityClassName, "getFieldsMeta"))
+		);
 		if (!$doc)
 			return null;
 
-		$mapper = new DocEntitytMapper($doc, ucfirst($this->collectionName));
+		$mapper = new DocEntitytMapper($doc, $this->entityClassName);
 		return $mapper->mapByFieldsMeta();
 	}
 
@@ -175,7 +185,7 @@ abstract class EntityManager implements IEntityManager
 		$doc = $this->collection->findOne($condition, $retFields);
 		if (!$doc)
 			return null;
-		$mapper = new DocEntitytMapper($doc, ucfirst($this->collectionName));
+		$mapper = new DocEntitytMapper($doc, $this->entityClassName);
 		return $mapper->mapByFieldsMeta();
 	}
 
@@ -192,10 +202,15 @@ abstract class EntityManager implements IEntityManager
 	{
 		$entityClass = ucfirst($this->collectionName);
 
-		$doc = $this->collection->findAndModify($condition, $update, $entityClass::getFieldsMeta(), $options);
+		$doc = $this->collection->findAndModify(
+			$condition,
+			$update,
+			call_user_func(array($this->entityClassName, "getFieldsMeta")),
+			$options
+		);
 		if (!$doc)
 			return null;
-		$mapper = new DocEntitytMapper($doc, ucfirst($this->collectionName));
+		$mapper = new DocEntitytMapper($doc, $this->entityClassName);
 		return $mapper->mapByFieldsMeta();
 	}
 

@@ -8,6 +8,8 @@
  * @author  Eugene Kurbatov <ekur@i-loto.ru>
  */
 
+namespace App\Entity;
+
 use Solo\Lib\Mongo\Entity;
 
 class User extends Entity
@@ -52,5 +54,15 @@ class User extends Entity
 		return array(
 			"friends" => false
 		);
+	}
+
+	/**
+	 * Возвращает имя коллекции, где хранятся сущности этого типа
+	 *
+	 * @return string
+	 */
+	public function getCollectionName()
+	{
+		return "user";
 	}
 }

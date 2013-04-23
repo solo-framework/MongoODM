@@ -7,6 +7,11 @@
  * To change this template use File | Settings | File Templates.
  */
 
+use App\Entity\Address;
+use App\Entity\Article;
+use App\Entity\Author;
+use App\Entity\Comment;
+use App\Entity\Phone;
 use Solo\Lib\Mongo\DocEntitytMapper;
 use Solo\Lib\Mongo\Entity;
 
@@ -14,7 +19,7 @@ class MongoDocEntitytMapperTest extends PHPUnit_Framework_TestCase
 {
 	public function testMapByFieldsMeta()
 	{
-		$docEntMapper = new DocEntitytMapper($this->getArticleData(), "Article");
+		$docEntMapper = new DocEntitytMapper($this->getArticleData(), "App\\Entity\\Article");
 		$article = $docEntMapper->mapByFieldsMeta();
 
 		$this->assertTrue($article->id instanceof MongoId);
@@ -23,13 +28,13 @@ class MongoDocEntitytMapperTest extends PHPUnit_Framework_TestCase
 
 	public function testArrayToObjectRecurively()
 	{
-		$docEntMapper = new DocEntitytMapper($this->getArticleData(), "Article");
+		$docEntMapper = new DocEntitytMapper($this->getArticleData(), "App\\Entity\\Article");
 
 		/** @var $article Article */
 		$article = $this->invokeMethod(
 			$docEntMapper,
 			"arrayToObjectRecurively",
-			array($this->getArticleData(), array("type" => Entity::TYPE_ENTITY, "class" => "Article"))
+			array($this->getArticleData(), array("type" => Entity::TYPE_ENTITY, "class" => "App\\Entity\\Article"))
 		);
 
 		$this->assertTrue($article instanceof Article);
@@ -60,7 +65,7 @@ class MongoDocEntitytMapperTest extends PHPUnit_Framework_TestCase
 		$article = $this->invokeMethod(
 			$docEntMapper,
 			"arrayToObjectRecurively",
-			array($this->getArticleData(), array("type" => "NOTHING", "class" => "Article"))
+			array($this->getArticleData(), array("type" => "NOTHING", "class" => "App\\Entity\\Article"))
 		);
 
 		$this->assertNull($article);

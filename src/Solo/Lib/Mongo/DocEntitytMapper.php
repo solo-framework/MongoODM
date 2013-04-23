@@ -67,7 +67,7 @@ class DocEntitytMapper
 		if ($options["type"] == Entity::TYPE_ENTITY)
 		{
 			$object = new $options["class"];
-			$fieldMeta = $options["class"]::getEntityRelations();
+			$fieldMeta = call_user_func(array($options["class"], "getEntityRelations"));
 
 			foreach ($data as $name => $value)
 			{

@@ -7,7 +7,10 @@
  * To change this template use File | Settings | File Templates.
  */
 
-use Solo\Lib\Mongo\DataSet;
+use App\Entity\Article;
+use App\Entity\User;
+use App\Manager\ArticleManager;
+use App\Manager\UserManager;
 
 class MongoEntityManagerTest extends PHPUnit_Framework_TestCase
 {

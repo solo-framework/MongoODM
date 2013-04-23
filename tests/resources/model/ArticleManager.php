@@ -8,6 +8,8 @@
  * @author  Eugene Kurbatov <ekur@i-loto.ru>
  */
 
+namespace App\Manager;
+
 use Solo\Lib\Mongo\Connection;
 use Solo\Lib\Mongo\EntityManager;
 
