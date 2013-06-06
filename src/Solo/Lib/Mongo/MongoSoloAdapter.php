@@ -10,6 +10,8 @@
 
 namespace Solo\Lib\Mongo;
 
+use Solo\Core\IApplicationComponent;
+
 class MongoSoloAdapter implements IApplicationComponent
 {
 	/**
