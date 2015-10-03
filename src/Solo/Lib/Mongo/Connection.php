@@ -33,6 +33,14 @@ class Connection
 	 */
 	public $options = array();
 
+
+	/**
+	 * Количество попыток подключения
+	 *
+	 * @var int
+	 */
+	public $attempts = 5;
+
 	/**
 	 * MongoClient
 	 *
@@ -51,9 +59,44 @@ class Connection
 	 */
 	public function __construct($server, $dbname, $options)
 	{
-		$mongo = new \MongoClient($server, $options);
+		$mongo = $this->createConnection($server, $options, $this->attempts);
 		$this->mongodb = $mongo->selectDB($dbname);
 	}
+
+	/**
+	 * Создает подключение.
+	 * Делает несколько попыток
+	 * https://jira.mongodb.org/browse/PHP-854
+	 *
+	 * @param $server
+	 * @param $options
+	 * @param int $attempts
+	 *
+	 * @return \MongoClient
+	 * @throws \Exception
+	 */
+	protected function createConnection($server, $options, $attempts = 5)
+	{
+		$mongo = null;
+		$lastException = null;
+
+		try
+		{
+			return new \MongoClient($server, $options);
+		}
+		catch (\Exception $e)
+		{
+			$lastException = $e;
+		}
+
+		if ($attempts > 0)
+		{
+			return $this->createConnection($server, $options, --$attempts);
+		}
+
+		throw $lastException;
+	}
+
 
 	/**
 	 * Возвращает экземпляр Mongo
