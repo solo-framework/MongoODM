@@ -10,12 +10,12 @@
 use App\Entity\Article;
 use App\Entity\User;
 use App\Manager\ArticleManager;
-use App\Manager\UserManager;
+use App\Manager\OdmUserManager;
 
 class MongoEntityManagerTest extends PHPUnit_Framework_TestCase
 {
 	/**
-	 * @var UserManager
+	 * @var OdmUserManager
 	 */
 	private $um = null;
 
@@ -26,7 +26,7 @@ class MongoEntityManagerTest extends PHPUnit_Framework_TestCase
 
 	public function __construct()
 	{
-		$this->um = new UserManager();
+		$this->um = new OdmUserManager();
 		$this->am = new ArticleManager();
 	}
 
@@ -357,12 +357,12 @@ class MongoEntityManagerTest extends PHPUnit_Framework_TestCase
 
 	public function testBuildObjectIdList()
 	{
-		$ids = UserManager::buildObjectIdList(array("51486d47c674d9fbd71ac4b5", "51486d47c674d9fbd71ac4b6"));
+		$ids = OdmUserManager::buildObjectIdList(array("51486d47c674d9fbd71ac4b5", "51486d47c674d9fbd71ac4b6"));
 		$this->assertEquals(array(
              new MongoId("51486d47c674d9fbd71ac4b5"),
              new MongoId("51486d47c674d9fbd71ac4b6")
         ), $ids);
 
-		$this->assertEquals(array(), UserManager::buildObjectIdList(array()));
+		$this->assertEquals(array(), OdmUserManager::buildObjectIdList(array()));
 	}
 }

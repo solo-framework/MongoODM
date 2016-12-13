@@ -13,7 +13,7 @@ namespace App\Manager;
 use Solo\Lib\Mongo\Connection;
 use Solo\Lib\Mongo\EntityManager;
 
-class UserManager extends EntityManager
+class OdmUserManager extends EntityManager
 {
 
 	/**
