@@ -7,7 +7,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-use App\Entity\User;
+use App\Entity\ODMUser;
 use Solo\Lib\Mongo\DataSet;
 
 class MongoDataSetTest extends PHPUnit_Framework_TestCase
@@ -36,10 +36,10 @@ class MongoDataSetTest extends PHPUnit_Framework_TestCase
 
 	public function testGetValues()
 	{
-		/** @var $doc User */
+		/** @var $doc ODMUser */
 		foreach ($this->dataSet->getValues() as $doc)
 		{
-			$this->assertTrue($doc instanceof User);
+			$this->assertTrue($doc instanceof ODMUser);
 			$this->assertTrue($doc->id instanceof MongoId);
 			$this->assertTrue(is_string($doc->name));
 			$this->assertTrue($doc->createAt instanceof MongoDate);
@@ -54,7 +54,7 @@ class MongoDataSetTest extends PHPUnit_Framework_TestCase
 		$this->dataSet->next();
 		$currDoc = $this->dataSet->current();
 
-		$this->assertTrue($currDoc instanceof User);
+		$this->assertTrue($currDoc instanceof ODMUser);
 		$this->assertTrue($currDoc->id instanceof MongoId);
 		$this->assertTrue($currDoc->createAt instanceof MongoDate);
 		$this->assertEquals("Alice", $currDoc->name);

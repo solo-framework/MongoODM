@@ -12,7 +12,7 @@ namespace App\Entity;
 
 use Solo\Lib\Mongo\Entity;
 
-class User extends Entity
+class ODMUser extends Entity
 {
 	/**
 	 * Идентификатор

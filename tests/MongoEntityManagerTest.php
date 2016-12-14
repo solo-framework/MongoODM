@@ -8,7 +8,7 @@
  */
 
 use App\Entity\Article;
-use App\Entity\User;
+use App\Entity\ODMUser;
 use App\Manager\ArticleManager;
 use App\Manager\OdmUserManager;
 
@@ -47,20 +47,20 @@ class MongoEntityManagerTest extends PHPUnit_Framework_TestCase
 		$this->assertEquals(3, $dataSet->count());
 		foreach ($dataSet->getValues() as $doc)
 		{
-			$this->assertTrue($doc instanceof User);
+			$this->assertTrue($doc instanceof ODMUser);
 		}
 
 		// simple
 		$dataSet = $this->um->find(array("name" => "Alice"));
 		$this->assertEquals(1, $dataSet->count());
 		$u = $dataSet->getNext();
-		$this->assertTrue($u instanceof User);
+		$this->assertTrue($u instanceof ODMUser);
 		$this->assertEquals("Alice", $u->name);
 
 		// $and
 		$dataSet = $this->um->find(array("name" => "Carl", "age" => array('$gte' => 30)));
 		$u = $dataSet->getNext();
-		$this->assertTrue($u instanceof User);
+		$this->assertTrue($u instanceof ODMUser);
 		$this->assertEquals("Carl", $u->name);
 		$this->assertEquals(30, $u->age);
 
@@ -73,7 +73,7 @@ class MongoEntityManagerTest extends PHPUnit_Framework_TestCase
 		// $in
 		$dataSet = $this->um->find(array("name" => array('$in' => array("Alice", "Mike", "Jounh"))));
 		$u = $dataSet->getNext();
-		$this->assertTrue($u instanceof User);
+		$this->assertTrue($u instanceof ODMUser);
 		$this->assertEquals("Alice", $u->name);
 
 		// $nin
@@ -85,7 +85,7 @@ class MongoEntityManagerTest extends PHPUnit_Framework_TestCase
 		// regexp
 		$dataSet = $this->um->find(array("name" => new MongoRegex("/^B/")));
 		$u = $dataSet->getNext();
-		$this->assertTrue($u instanceof User);
+		$this->assertTrue($u instanceof ODMUser);
 		$this->assertEquals("Bob", $u->name);
 
 		// $all
@@ -152,9 +152,9 @@ class MongoEntityManagerTest extends PHPUnit_Framework_TestCase
 	public function testFindOne()
 	{
 		// simple
-		/** @var $u User */
+		/** @var $u ODMUser */
 		$u = $this->um->findOne(array("name" => "Alice"));
-		$this->assertTrue($u instanceof User);
+		$this->assertTrue($u instanceof ODMUser);
 		$this->assertEquals("Alice", $u->name);
 
 		$this->assertNotEmpty($u->createAt);
@@ -166,7 +166,7 @@ class MongoEntityManagerTest extends PHPUnit_Framework_TestCase
 
 		// $and
 		$u = $this->um->findOne(array("name" => "Carl", "age" => array('$gte' => 30)));
-		$this->assertTrue($u instanceof User);
+		$this->assertTrue($u instanceof ODMUser);
 		$this->assertEquals("Carl", $u->name);
 		$this->assertEquals(30, $u->age);
 
@@ -218,7 +218,7 @@ class MongoEntityManagerTest extends PHPUnit_Framework_TestCase
 
 	public function testFetchPartEntity()
 	{
-		/** @var $u User */
+		/** @var $u ODMUser */
 		$u = $this->um->fetchPartEntity(array("name" => "Alice"), array("name" => true));
 
 		$this->assertEquals("Alice", $u->name);
@@ -298,7 +298,7 @@ class MongoEntityManagerTest extends PHPUnit_Framework_TestCase
 	public function testSave()
 	{
 		//insert
-		$u = new User();
+		$u = new ODMUser();
 		$u->name = "Jounh";
 		$u->age = 50;
 		$u->createAt = new MongoDate();
